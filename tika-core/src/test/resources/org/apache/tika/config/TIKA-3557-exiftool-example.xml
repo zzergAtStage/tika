@@ -16,6 +16,7 @@
   limitations under the License.
 -->
 <properties>
+  <!--
   <parsers>
     <parser class="org.apache.tika.parser.external2.ExternalParser">
       <params>
@@ -26,16 +27,16 @@
           <string>exiftool</string>
           <string>${INPUT_FILE}</string>
         </param>
-        <param name="checkExitValues" type="list">
+        <param name="checkExitValues" type="list"> -->
           <!-- which exit values confirm that the application basically works -->
-          <int>0</int>
-        </param>
-        <param name="outputParser" type="class" class="org.apache.tika.parser.RegexCaptureParser">
-          <params>
-            <param name="captureMap" type="map">
-              <match key="mime" value="^MIME Type\s+: ([^\r\n]+)"/>
-              <match key="pages" value="^Page Count\s+: ([^\r\n]+)"/>
-              <match key="pdf:version" value="^PDF Version\s+: ([^\r\n]+)"/>
+<!--          <int>0</int>-->
+<!--        </param>-->
+<!--        <param name="outputParser" type="class" class="org.apache.tika.parser.RegexCaptureParser">-->
+<!--          <params>-->
+<!--            <param name="captureMap" type="map">-->
+<!--              <match key="mime" value="^MIME Type\s+: ([^\r\n]+)"/>-->
+<!--              <match key="pages" value="^Page Count\s+: ([^\r\n]+)"/>-->
+<!--              <match key="pdf:version" value="^PDF Version\s+: ([^\r\n]+)"/>-->
               <!--
               <match key="dc:title" value="^Title\s+: ([^\r\n]+)"/>
               <match key="dc:creator" value="^Author\s+: ([^\r\n]+)"/>
@@ -44,10 +45,11 @@
               <match key="producer" value="^Producer\s+: ([^\r\n]+)"/>
               <match key="creator_tool" value="^Creator Tool\s+: ([^\r\n]+)"/>
               <match key="tagged" value="^Tagged PDF\s+: ([^\r\n]+)"/> -->
-            </param>
-          </params>
-        </param>
-      </params>
-    </parser>
-  </parsers>
+<!--            </param>-->
+<!--          </params>-->
+<!--        </param>-->
+<!--      </params>-->
+<!--    </parser>-->
+<!--  </parsers>-->
+
 </properties>

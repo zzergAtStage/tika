@@ -16,26 +16,26 @@
   limitations under the License.
 -->
 <properties>
-    <parsers>
-        <parser class="org.apache.tika.parser.external2.ExternalParser">
-            <params>
-                <param name="supportedTypes" type="list">
-                    <string>application/xml</string>
-                </param>
-                <param name="commandLine" type="list">
-                    <string>file</string>
-                    <string>-b</string>
-                    <string>--mime-type</string>
-                    <string>${INPUT_FILE}</string>
-                </param>
-                <param name="outputParser" type="class" class="org.apache.tika.parser.RegexCaptureParser">
-                    <params>
-                        <param name="captureMap" type="map">
-                            <title>^Title: ([^\r\n]+)</title>
-                        </param>
-                    </params>
-                </param>
-            </params>
-        </parser>
-    </parsers>
+<!--    <parsers>-->
+<!--        <parser class="org.apache.tika.parser.external2.ExternalParser">-->
+<!--            <params>-->
+<!--                <param name="supportedTypes" type="list">-->
+<!--                    <string>application/xml</string>-->
+<!--                </param>-->
+<!--                <param name="commandLine" type="list">-->
+<!--                    <string>file</string>-->
+<!--                    <string>-b</string>-->
+<!--                    <string>&#45;&#45;mime-type</string>-->
+<!--                    <string>${INPUT_FILE}</string>-->
+<!--                </param>-->
+<!--                <param name="outputParser" type="class" class="org.apache.tika.parser.RegexCaptureParser">-->
+<!--                    <params>-->
+<!--                        <param name="captureMap" type="map">-->
+<!--                            <title>^Title: ([^\r\n]+)</title>-->
+<!--                        </param>-->
+<!--                    </params>-->
+<!--                </param>-->
+<!--            </params>-->
+<!--        </parser>-->
+<!--    </parsers>-->
 </properties>
