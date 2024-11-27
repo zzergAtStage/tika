@@ -32,7 +32,6 @@ import org.apache.tika.exception.TikaException;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.mime.MediaType;
 import org.apache.tika.parser.ParseContext;
-import org.apache.tika.parser.recognition.tf.TensorflowImageRecParser;
 
 /**
  * This is a contract for object recognisers used by {@link ObjectRecognitionParser}

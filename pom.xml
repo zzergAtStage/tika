@@ -181,6 +181,15 @@ least three +1 Tika PMC votes are cast.
   </profiles>
 
   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.biarum</groupId>
+          <artifactId>tika-security-maven-plugin</artifactId>
+          <version>1.0.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <groupId>org.apache.rat</groupId>

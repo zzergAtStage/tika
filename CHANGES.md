@@ -9,7 +9,7 @@ We are removing classes that utilize vulnerable functionalities, specifically th
 
 ## Where?
 By list:
-### ExternalParser
+### ExternalParser (v2)
 ExternalParser.java in [org.apache.tika.parser.external2](tika-core/src/main/java/org/apache/tika/parser/external2)
 removed step-by-step (from dependencies list):
 [ExternalParserTest.java tika-core/src/test/java/org/apache/tika/parser/external2/ExternalParserTest.java ](tika-core/src/test/java/org/apache/tika/parser/external2/)
@@ -22,3 +22,21 @@ commited in test configurations:
 
 ### ExternalEmbedder
 Removed [ExternalEmbedder.java](tika-core/src/main/java/org/apache/tika/embedder/)
+
+### external.ExternalParser (org.apache.tika.parser.external)
+
+Removed (CompositeExternalParser.java)[tika-core/src/main/java/org/apache/tika/parser/external/]
+Removed usages:
+* [TestParsers.java](tika-parsers/tika-parsers-extended/tika-parser-scientific-package/src/test/java/org/apache/tika/parser/scientific/integration/TestParsers.java)
+* [AutoDetectParserTest.java](tika-parsers/tika-parsers-standard/tika-parsers-standard-package/src/test/java/org/apache/tika/parser/)  
+
+Removed [ExternalParsersFactory.java](tika-core/src/main/java/org/apache/tika/parser/external/)
+Removed [ExternalParsersConfigReader.java](tika-core/src/main/java/org/apache/tika/parser/external/)
+Removed [ExternalParsersConfigReaderMetKeys.java](tika-core/src/main/java/org/apache/tika/parser/external/)
+
+
+
+
+### Notes:
+
+
