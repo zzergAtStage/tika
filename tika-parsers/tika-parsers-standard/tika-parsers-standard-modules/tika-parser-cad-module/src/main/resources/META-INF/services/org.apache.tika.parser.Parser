@@ -14,6 +14,6 @@
 #  limitations under the License.
 
 org.apache.tika.parser.dgn.DGN8Parser
-org.apache.tika.parser.dwg.DWGParser
+
 org.apache.tika.parser.prt.PRTParser
 
